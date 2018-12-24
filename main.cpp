@@ -18,47 +18,47 @@ private:
 public:
 	static void operation(int addr)
 	{
-	    ofstream objectCode("../output.txt", ios::app);
+	    ofstream objectCode("output.txt", ios::app);
         objectCode << "OPR\t0\t" << addr << endl;
 	}
 	static void load(int l, int addr)
 	{
-        ofstream objectCode("../output.txt", ios::app);
+        ofstream objectCode("output.txt", ios::app);
         objectCode << "LOD\t" << l << "\t" << addr << endl;
 	}
 	static void store(int l, int addr)
 	{
-	    ofstream objectCode("../output.txt", ios::app);
+	    ofstream objectCode("output.txt", ios::app);
         objectCode << "STO\t" << l << "\t" << addr << endl;
 	}
 	static void call(int l, int addr)
 	{
-        ofstream objectCode("../output.txt", ios::app);
+        ofstream objectCode("output.txt", ios::app);
         objectCode << "CAL\t" << l << "\t" << addr << endl;
 	}
 	static void increaseTop(int addr)
 	{
-        ofstream objectCode("../output.txt", ios::app);
+        ofstream objectCode("output.txt", ios::app);
         objectCode << "INT\t0\t" << addr << endl;
 	}
 	static void jump(int addr)
 	{
-        ofstream objectCode("../output.txt", ios::app);
+        ofstream objectCode("output.txt", ios::app);
         objectCode << "JMP\t0\t" << addr << endl;
 	}
 	static void jumpCompare(int addr)
 	{
-        ofstream objectCode("../output.txt", ios::app);
+        ofstream objectCode("output.txt", ios::app);
         objectCode << "JPC\t0\t" << addr << endl;
 	}
 	static void read(int l, int addr)
 	{
-	    ofstream objectCode("../output.txt", ios::app);
+	    ofstream objectCode("output.txt", ios::app);
         objectCode << "RED\t" << l << "\t" << addr << endl;
 	}
 	static void write()
 	{
-        ofstream objectCode("../output.txt", ios::app);
+        ofstream objectCode("output.txt", ios::app);
         objectCode << "WRT\t0\t0" << endl;
 	}
 };
